@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+  body {
+    @apply bg-paper text-ink;
+  }
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-signal;
+  }
+}
+
+@layer components {
+  /* Signature element: the "release stamp" badge. Every status, priority,
+     severity, and AI risk value in the app renders through this component
+     so the whole system reads like inspection stamps on a batch record. */
+  .stamp {
+    @apply relative inline-flex items-center gap-1.5 rounded-[3px] border px-2.5 py-1
+      font-mono text-[11px] font-medium uppercase tracking-stamp;
+  }
+  .stamp::before,
+  .stamp::after {
+    content: "";
+    @apply absolute top-0 h-1.5 w-1.5 border-current opacity-70;
+  }
+  .stamp::before {
+    @apply left-0 border-l border-t;
+  }
+  .stamp::after {
+    @apply right-0 border-r border-t;
+  }
+
+  .field-label {
+    @apply mb-1 block font-mono text-[11px] uppercase tracking-stamp text-slate;
+  }
+
+  .input {
+    @apply w-full rounded-sm border border-line bg-white px-3 py-2 text-sm text-ink
+      placeholder:text-slate-light focus:border-signal;
+  }
+
+  .card {
+    @apply rounded-sm border border-line bg-white;
+  }
+
+  .section-number {
+    @apply flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-ink
+      font-mono text-[11px] text-ink;
+  }
+}

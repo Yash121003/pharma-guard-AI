@@ -1,0 +1,16 @@
+Complaint received via customer support form.
+
+Customer: Wellness Retail Chain
+Product: Amoxicillin 250mg Capsules
+Batch Number: AMX-2026-0892
+Manufacturing Date: 2026-02-15
+Expiry Date: 2028-02-15
+Quantity Affected: 2.3 kg
+
+Description: Customer reports that several capsules in the bottle appear
+discolored (yellowish tint instead of the usual white/cream color). This
+was noticed across 4 different bottles from the same batch. No adverse
+health effects reported yet, but customer is concerned about product
+efficacy and has stopped dispensing this batch pending our response.
+
+Complaint Date: 2026-07-18
